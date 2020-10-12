@@ -21,7 +21,7 @@ from gevent.pywsgi import WSGIServer
 app = Flask(__name__)
 
 # Model saved with Keras model.save()
-MODEL_PATH = 'models/retinanet_5_classes.h5'
+MODEL_PATH = 'retinanet_5_classes.h5'
 with open('label_map.json','r') as f:
     label_map = json.load(f)
 
